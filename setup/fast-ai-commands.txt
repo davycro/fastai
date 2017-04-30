@@ -1,0 +1,20 @@
+# Connect to your instance:
+ssh -i /Users/david/.ssh/aws-key-fast-ai.pem ubuntu@ec2-35-164-72-55.us-west-2.compute.amazonaws.com
+# Stop your instance: :
+aws ec2 stop-instances --instance-ids i-078b5f97b4a326395
+# Start your instance:
+aws ec2 start-instances --instance-ids i-078b5f97b4a326395
+# Reboot your instance:
+aws ec2 reboot-instances --instance-ids i-078b5f97b4a326395
+export instanceId=i-078b5f97b4a326395
+export subnetId=subnet-6e6b2d09
+export securityGroupId=sg-de8e31a5
+export instanceUrl=ec2-35-164-72-55.us-west-2.compute.amazonaws.com
+export routeTableId=rtb-320ed554
+export name=fast-ai
+export vpcId=vpc-517a5036
+export internetGatewayId=igw-1e7d9479
+export subnetId=subnet-6e6b2d09
+export allocAddr=eipalloc-a614719c
+export assocId=eipassoc-2eabea14
+export routeTableAssoc=rtbassoc-3651874f
